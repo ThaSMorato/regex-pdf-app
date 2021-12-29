@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "jest": "^27.4.5",
+    "pdfdataextract": "^3.2.0",
+    "safe-regex": "^2.1.1"
+  },
+  "scripts": {
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand --watchAll --config ./jest.config.js",
+    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules && npx jest  --config ./jest.config.js --coverage",
+    "start": "node src/index.js"
+  }
+}
